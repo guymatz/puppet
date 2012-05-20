@@ -1,0 +1,92 @@
+{
+  "name": "gmatz-cluster",
+  "author": "gmatz",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "",
+  "checksums": {
+    "Modulefile": "48bc8ec5524ed1e1c091249426399e0a",
+    "README": "ecda1eb5d43dd69d65f51ad5f11a4e49",
+    "lib/puppet/provider/cluster.rb": "d41d8cd98f00b204e9800998ecf8427e",
+    "lib/puppet/type/cluster.rb": "2d77d807064af4d6d35bd6aaa17779f5",
+    "lib/puppet/type/fence.rb": "03c4754785d964563046dcc37568d2b2",
+    "lib/puppet/type/node.rb": "bee05575e5fe906b6d56a162a5b8b39a",
+    "manifests/init.pp": "1a69189ee0b3da3213e8d454893b5a12",
+    "manifests/redhat/init.pp": "ccf4f0bf0482d601be3898a0c0df4f92",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "tests/init.pp": "7e49f68c3ea959fb2096a373225e4dbd"
+  },
+  "types": [
+    {
+      "parameters": [
+        {
+          "name": "cluster",
+          "doc": "Name of cluster"
+        },
+        {
+          "name": "nodes",
+          "doc": "Nodes of cluster"
+        }
+      ],
+      "name": "cluster",
+      "doc": "Creates a RedHat Cluster"
+    },
+    {
+      "parameters": [
+        {
+          "name": "node",
+          "doc": "Name of node"
+        },
+        {
+          "name": "nodeid",
+          "doc": "ID of node"
+        },
+        {
+          "name": "votes",
+          "doc": "Votes for node"
+        }
+      ],
+      "name": "node",
+      "doc": "Creates a RedHat Cluster Node"
+    },
+    {
+      "parameters": [
+        {
+          "name": "fencedevice",
+          "doc": "Name of Fence Device"
+        },
+        {
+          "name": "agent",
+          "doc": "IP of cluster Node"
+        },
+        {
+          "name": "auth",
+          "doc": "Type of authentication for fence device"
+        },
+        {
+          "name": "ipaddr",
+          "doc": "IP of cluster Node"
+        },
+        {
+          "name": "lanplus",
+          "doc": "IP of cluster Node"
+        },
+        {
+          "name": "login",
+          "doc": "Username for Fence device"
+        },
+        {
+          "name": "passwd",
+          "doc": "Username for Fence device"
+        }
+      ],
+      "name": "fence",
+      "doc": "Creates a RedHat Cluster Fence"
+    }
+  ],
+  "dependencies": []
+}
